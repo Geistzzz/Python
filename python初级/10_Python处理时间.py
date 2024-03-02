@@ -4,11 +4,11 @@
 # @File ： 10_Python处理时间.py
 # @Software: PyCharm
 
-import time
-
-t1 = time.time()  # 这个获得的是一个时间戳
-
-time.sleep(1)  # 程序等待1s
+# import time
+#
+# t1 = time.time()  # 这个获得的是一个时间戳
+#
+# time.sleep(1)  # 程序等待1s
 
 # import datetime
 #
@@ -28,7 +28,7 @@ time.sleep(1)  # 程序等待1s
 # print(type(test_datetime))
 # parsed_datetime = datetime.datetime.strptime(test_datetime, "%Y-%m-%d")
 # print(type(parsed_datetime))
-#
+
 # # 获取当前年份
 # print("---获取当前年份---")
 # current_year_1 = datetime.datetime.now().year  # 首推
@@ -62,13 +62,55 @@ import calendar
 # month = 12
 # print(calendar.month(year,month))
 
-import datetime as dt
+# current_datetime = dt.datetime.now()
+# current_year = current_datetime.year
+# current_month = current_datetime.month
+# current_weekday = current_datetime.weekday()  # 从0开始
+# week_number = current_datetime.isocalendar()[1]  # 一年当中第几周
+# curent_dat = current_datetime.day
+# print('今年是', current_year, '年', current_month, '月份', '星期', current_weekday, '一年中的第', week_number, '周', '这个月的第',
+#       curent_dat, '天')
 
-current_datetime = dt.datetime.now()
-current_year = current_datetime.year
-current_month = current_datetime.month
-current_weekday = current_datetime.weekday()  # 从0开始
-week_number = current_datetime.isocalendar()[1]  # 一年当中第几周
-curent_dat = current_datetime.day
-print('今年是', current_year, '年', current_month, '月份', '星期', current_weekday, '一年中的第', week_number, '周', '这个月的第',
-      curent_dat, '天')
+# # datetime模块里面的date类
+# from datetime import date
+#
+# # 根据时间戳转换日期
+# current_time_stamp = time.time()
+# print(date.fromtimestamp(current_time_stamp))
+# # 生成datetime对象
+# print(date(year=2024, month=3, day=2))
+# # 时间对象转字符串
+# print(date.strftime(date.today(), "%Y%m%d"))
+# # 字符串转时间对象
+
+# datetime模块里面的date类
+# from datetime import time
+# t1 = time(hour=20,minute=58,second=12,microsecond=34455)
+# print(t1)
+
+# datetime模块里面的datetime
+# from datetime import datetime
+# now = datetime.now() # 可以添加时区
+
+
+# # 时间加减
+# import datetime as dt
+#
+# dt0 = dt.datetime.now()
+#
+# dt1 = dt0 - dt.timedelta(days=1)
+#
+# dt2 = dt0 + dt.timedelta(days=1)
+#
+# # dt3 = dt0 + dt.timedelta(days=1)
+#
+# print(dt0, dt1, dt2)
+#
+# timedelta = dt2 - dt0
+# print(timedelta.days)
+# print(timedelta.seconds)
+# print(timedelta.microseconds)
+# print(timedelta.total_seconds())  # 换算成秒
+
+# 时区模块
+
