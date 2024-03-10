@@ -10,12 +10,23 @@
 #
 # time.sleep(1)  # 程序等待1s
 
-# import datetime
+import datetime
+import pandas
+import pandas as pd
+
 #
 # # 总揽：获取当前时间的全部信息用这条语句
 # # 方法1
 # print("---获取当前datetime---")
-# current_datetime_1 = datetime.datetime.now()  # 首推
+current_datetime_1 = datetime.datetime.now()  # 首推
+print(type(current_datetime_1.date()))
+print(type(current_datetime_1.time()))
+
+ts = pd.Timestamp('2020-01-01').second
+print(type(ts))
+start = datetime.datetime.now()
+range = pd.Timedelta(days=6)
+print(range)
 # current_datetime_2 = datetime.datetime.today()
 # print(current_datetime_1, current_datetime_2, current_datetime_1 == current_datetime_2)
 # # 格式化输出字符串
@@ -113,4 +124,3 @@ import calendar
 # print(timedelta.total_seconds())  # 换算成秒
 
 # 时区模块
-
