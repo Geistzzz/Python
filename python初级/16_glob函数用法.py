@@ -13,9 +13,6 @@ import os
 
 # ===保存数据到文件
 # 创建交易所文件夹
-path = os.path.join(path, exchange.id)
-if os.path.exists(path) is False:
-    os.mkdir(path)
 
 
 

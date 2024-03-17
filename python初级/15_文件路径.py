@@ -30,4 +30,11 @@ for root, dirs, files in os.walk(operate_path):
     print('files:', files)
     print('\n')
 
+path = os.path.join(path, exchange.id)
+if os.path.exists(path) is False:
+    os.mkdir(path)
+
+    # 获取所有文件路径
+    symbol_file_path = glob(kline_path + '*USDT.csv')  # 获取kline_path路径下，所有以usdt.csv结尾的文件路径
+
 
