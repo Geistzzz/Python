@@ -30,6 +30,8 @@ for root, dirs, files in os.walk(operate_path):
     print('files:', files)
     print('\n')
 
+pathtest = "/Users/mac/Documents/Python/python初级/15_文件路径.py"
+
 path = os.path.join(path, exchange.id)
 if os.path.exists(path) is False:
     os.mkdir(path)
@@ -37,4 +39,7 @@ if os.path.exists(path) is False:
     # 获取所有文件路径
     symbol_file_path = glob(kline_path + '*USDT.csv')  # 获取kline_path路径下，所有以usdt.csv结尾的文件路径
 
+# mac/linux的文件路径和windows的文件路径有什么不同
+# 在类 Unix（例如 Linux 和 macOS）系统中，文件路径使用正斜杠（/）作为目录分隔符。
+# 在 Windows 系统中，文件路径使用反斜杠（\）作为目录分隔符。
 
