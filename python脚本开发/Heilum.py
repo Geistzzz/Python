@@ -34,8 +34,9 @@ from time import sleep
 start_firefox("google.com")
 start_chrome(headless=True)
 from selenium.webdriver import ChromeOptions
-#firefox引入FirefoxOptions
+
+# firefox引入FirefoxOptions
 options = ChromeOptions()
 options.add_argument('--start-maximized')
 options.add_argument('--proxy-server=1.2.3.4:5678')
-start_chrome("www.baidu.com",headless=True,options=options)
+start_chrome("www.baidu.com", headless=True, options=options)
