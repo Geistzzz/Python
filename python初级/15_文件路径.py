@@ -6,7 +6,8 @@
 
 # 获取当前工作目录路径
 # import os
-#
+# 获取当前工作目录的三种方法
+# os.path.dirname(__file__)
 # print(os.getcwd())  # 获取当前工作目录路径
 # print(os.path.abspath('.'))  # 获取当前工作目录路径
 #

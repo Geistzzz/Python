@@ -6,7 +6,7 @@
 
 # 第一步打开文件
 
-file_object = open('t1.txt',mode='wb')
+file_object = open('../python脚本开发/t1.txt', mode='wb')
 
 # 写入内容
 file_object.write('hello world'.encode('utf-8'))
