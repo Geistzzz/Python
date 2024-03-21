@@ -1,9 +1,5 @@
 """
-《邢不行-2020新版|Python数字货币量化投资课程》
-无需编程基础，助教答疑服务，专属策略网站，一旦加入，永续更新。
-课程详细介绍：https://quantclass.cn/crypto/class
-邢不行微信: xbx9025
-本程序作者: 邢不行/西蒙斯
+
 
 # 课程内容
 - 列表介绍
@@ -11,7 +7,6 @@
 
 功能：本程序主要介绍python的常用内置数据结果，如list、dict、str等。希望以后大家只要看这个程序，就能回想起相关的基础知识。
 """
-
 
 # =====list介绍
 # 使用[]中括号就可以新建一个数组。
@@ -100,3 +95,11 @@
 # list_var = [3, 5, 1, 2, 4]
 # print(sorted(list_var))
 # print(list_var)
+
+# list是可变数据类型，在其本身操作，不改变其地址，下面进行验证
+list_var = [3, 5, 1, 2, 4]
+list_var.reverse()
+list_var.sort()
+list_var.extend([6, 'seven', [8], '九'])
+print(list_var)
+
