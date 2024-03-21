@@ -53,6 +53,7 @@ def buy():
     else:
         raise ValueError('程序报错！')  # 介绍raise的用法，之后常用
 
+
 # buy()
 
 # === 下单操作，若买入失败的话尝试重新买入。重点理解本段内容，之后常用
@@ -78,3 +79,31 @@ def buy():
 #         try_count = 0
 #         print('下单成功了')
 #         break
+# result = 10 / 0
+# try:
+#     # 尝试除法运算
+#     result = 10/0
+# except ZeroDivisionError as e:
+#     print('xxxx')
+
+# 万能异常
+# s1 = 'hello'
+#
+# try:
+#     int(s1)
+# except Exception as e:
+#     print(e)
+
+# 多分支
+# s1 = 'hello'
+# try:
+#     int(s1)
+# except IndexError as e:
+#     print(e)
+# except KeyError as e:
+#     print(e)
+# except ValueError as e:
+#     print(e)
+# except Exception as e:
+#     print(e)
+
