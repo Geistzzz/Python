@@ -15,7 +15,7 @@ file_object.write('hello world'.encode('utf-8'))
 file_object.close()
 
 # 优化后的写文件方式
-file_object = open('t2.txt',mode='wt')
+file_object = open('../data/t2.txt', mode='wt')
 
 # 写入内容
 file_object.write('张驰')
@@ -24,14 +24,14 @@ file_object.write('张驰')
 file_object.close()
 
 # 打开图片
-photo_object = open('t3.jpeg',mode='rb')
+photo_object = open('../data/t3.jpeg', mode='rb')
 # 读取图片内容
 b_object = photo_object.read()
 # 关闭图片
 photo_object.close()
 
 # 打开图片
-photo_object = open('t4.jpeg',mode='wb')
+photo_object = open('../data/t4.jpeg', mode='wb')
 # 写入内容
 photo_object.write(b_object)
 # 关闭文件
