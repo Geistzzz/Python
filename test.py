@@ -5,5 +5,14 @@
 # @File ： test.py
 # @Software: PyCharm
 
+import pyautogui
 
-print('hello world')
+
+# print(pyautogui.size())
+# print(pyautogui.position())
+
+sizex,sizey=pyautogui.size()
+# print(sizex,sizey)
+
+pyautogui.moveTo(sizex/2,sizey/2,duration=90)
+
