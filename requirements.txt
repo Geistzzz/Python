@@ -1,3 +1,0 @@
-pandas==2.0.3
-pendulum~=3.0.0
-pyautogui==0.9.54
